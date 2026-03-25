@@ -1,0 +1,244 @@
+{
+  "productos": [
+    {
+      "id": 201,
+      "nombre": "Seagate IronWolf 4TB",
+      "categoria": "Almacenamiento",
+      "precio": 1054.49,
+      "stock": 21,
+      "marca": "Seagate"
+    },
+    {
+      "id": 202,
+      "nombre": "Dell UltraSharp U2723QE",
+      "categoria": "Monitores",
+      "precio": 839.21,
+      "stock": 46,
+      "marca": "Dell"
+    },
+    {
+      "id": 203,
+      "nombre": "AMD Radeon RX 6700 XT",
+      "categoria": "Tarjetas Gráficas",
+      "precio": 2362.24,
+      "stock": 17,
+      "marca": "AMD"
+    },
+    {
+      "id": 204,
+      "nombre": "ASUS ROG Zephyrus G14",
+      "categoria": "Laptops",
+      "precio": 1419.86,
+      "stock": 97,
+      "marca": "ASUS"
+    },
+    {
+      "id": 205,
+      "nombre": "Logitech G Pro X",
+      "categoria": "Teclados",
+      "precio": 1693.3,
+      "stock": 96,
+      "marca": "Logitech"
+    },
+    {
+      "id": 206,
+      "nombre": "SteelSeries Apex Pro",
+      "categoria": "Teclados",
+      "precio": 401.78,
+      "stock": 42,
+      "marca": "SteelSeries"
+    },
+    {
+      "id": 207,
+      "nombre": "MSI MAG B650 Tomahawk",
+      "categoria": "Placas Base",
+      "precio": 1509.93,
+      "stock": 55,
+      "marca": "MSI"
+    },
+    {
+      "id": 208,
+      "nombre": "Razer BlackWidow V4",
+      "categoria": "Teclados",
+      "precio": 2321.3,
+      "stock": 99,
+      "marca": "Razer"
+    },
+    {
+      "id": 209,
+      "nombre": "WD Black SN850X 1TB",
+      "categoria": "Almacenamiento",
+      "precio": 1948.74,
+      "stock": 80,
+      "marca": "WD"
+    },
+    {
+      "id": 210,
+      "nombre": "Corsair RM850x",
+      "categoria": "Fuentes de Alimentación",
+      "precio": 190.1,
+      "stock": 25,
+      "marca": "Corsair"
+    },
+    {
+      "id": 211,
+      "nombre": "Kingston NV2 1TB",
+      "categoria": "Almacenamiento",
+      "precio": 418.06,
+      "stock": 17,
+      "marca": "Kingston"
+    },
+    {
+      "id": 212,
+      "nombre": "AMD Ryzen 9 7950X",
+      "categoria": "Procesadores",
+      "precio": 2490.96,
+      "stock": 15,
+      "marca": "AMD"
+    },
+    {
+      "id": 213,
+      "nombre": "Gigabyte Z790 AORUS ELITE",
+      "categoria": "Placas Base",
+      "precio": 57.17,
+      "stock": 70,
+      "marca": "Gigabyte"
+    },
+    {
+      "id": 214,
+      "nombre": "MacBook Air M2",
+      "categoria": "Laptops",
+      "precio": 210.36,
+      "stock": 37,
+      "marca": "HP"
+    },
+    {
+      "id": 215,
+      "nombre": "SteelSeries Rival 3",
+      "categoria": "Ratones",
+      "precio": 2420.27,
+      "stock": 47,
+      "marca": "SteelSeries"
+    },
+    {
+      "id": 216,
+      "nombre": "ASUS ROG Maximus Z790",
+      "categoria": "Placas Base",
+      "precio": 747.78,
+      "stock": 14,
+      "marca": "ASUS"
+    },
+    {
+      "id": 217,
+      "nombre": "NVIDIA RTX 4090",
+      "categoria": "Tarjetas Gráficas",
+      "precio": 646.6,
+      "stock": 32,
+      "marca": "NVIDIA"
+    },
+    {
+      "id": 218,
+      "nombre": "Corsair Vengeance 32GB DDR5",
+      "categoria": "Memorias RAM",
+      "precio": 2049.52,
+      "stock": 46,
+      "marca": "Corsair"
+    },
+    {
+      "id": 219,
+      "nombre": "Intel Core i5-13600K",
+      "categoria": "Procesadores",
+      "precio": 1980.9,
+      "stock": 75,
+      "marca": "Intel"
+    },
+    {
+      "id": 220,
+      "nombre": "Logitech G502 Hero",
+      "categoria": "Ratones",
+      "precio": 1756.24,
+      "stock": 45,
+      "marca": "Logitech"
+    },
+    {
+      "id": 221,
+      "nombre": "Samsung 990 Pro 2TB",
+      "categoria": "Almacenamiento",
+      "precio": 1109.81,
+      "stock": 25,
+      "marca": "Samsung"
+    },
+    {
+      "id": 222,
+      "nombre": "EVGA SuperNOVA 750 G6",
+      "categoria": "Fuentes de Alimentación",
+      "precio": 1963.85,
+      "stock": 14,
+      "marca": "MSI"
+    },
+    {
+      "id": 223,
+      "nombre": "HP Spectre x360",
+      "categoria": "Laptops",
+      "precio": 2486.2,
+      "stock": 76,
+      "marca": "HP"
+    },
+    {
+      "id": 224,
+      "nombre": "NVIDIA RTX 4070 Ti",
+      "categoria": "Tarjetas Gráficas",
+      "precio": 1113.84,
+      "stock": 58,
+      "marca": "NVIDIA"
+    },
+    {
+      "id": 225,
+      "nombre": "Kingston Fury Beast 16GB",
+      "categoria": "Memorias RAM",
+      "precio": 194.2,
+      "stock": 27,
+      "marca": "Kingston"
+    },
+    {
+      "id": 226,
+      "nombre": "ASUS ProArt PA32UCG",
+      "categoria": "Monitores",
+      "precio": 2314.9,
+      "stock": 36,
+      "marca": "ASUS"
+    },
+    {
+      "id": 227,
+      "nombre": "Samsung Odyssey G7",
+      "categoria": "Monitores",
+      "precio": 35.84,
+      "stock": 61,
+      "marca": "Samsung"
+    },
+    {
+      "id": 228,
+      "nombre": "LG UltraGear 27GN950",
+      "categoria": "Monitores",
+      "precio": 169.51,
+      "stock": 43,
+      "marca": "LG"
+    },
+    {
+      "id": 229,
+      "nombre": "AMD Radeon RX 7900 XTX",
+      "categoria": "Tarjetas Gráficas",
+      "precio": 1928.32,
+      "stock": 38,
+      "marca": "AMD"
+    },
+    {
+      "id": 230,
+      "nombre": "Corsair Scimitar RGB",
+      "categoria": "Ratones",
+      "precio": 1424.3,
+      "stock": 47,
+      "marca": "Corsair"
+    }
+  ]
+}
