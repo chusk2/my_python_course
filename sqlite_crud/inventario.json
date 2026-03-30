@@ -1,0 +1,504 @@
+{
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "iPhone 15 Pro Max",
+      "marca": "Apple",
+      "categoria": "Smartphones",
+      "precio": 1299.99,
+      "stock": 15,
+      "especificaciones": "6.7 pulgadas, 256GB, Titanio",
+      "fecha_ingreso": "2024-01-15"
+    },
+    {
+      "id": 2,
+      "nombre": "Samsung Galaxy S24 Ultra",
+      "marca": "Samsung",
+      "categoria": "Smartphones",
+      "precio": 1199.99,
+      "stock": 22,
+      "especificaciones": "6.8 pulgadas, 512GB, Negro",
+      "fecha_ingreso": "2024-01-20"
+    },
+    {
+      "id": 3,
+      "nombre": "MacBook Pro 16 M3",
+      "marca": "Apple",
+      "categoria": "Laptops",
+      "precio": 2499.99,
+      "stock": 8,
+      "especificaciones": "16 pulgadas, 512GB SSD, 16GB RAM",
+      "fecha_ingreso": "2024-01-10"
+    },
+    {
+      "id": 4,
+      "nombre": "Dell XPS 13",
+      "marca": "Dell",
+      "categoria": "Laptops",
+      "precio": 1299.99,
+      "stock": 12,
+      "especificaciones": "13.4 pulgadas FHD, Intel i7, 512GB SSD",
+      "fecha_ingreso": "2024-01-18"
+    },
+    {
+      "id": 5,
+      "nombre": "AirPods Pro (2da gen)",
+      "marca": "Apple",
+      "categoria": "Accesorios",
+      "precio": 249.99,
+      "stock": 45,
+      "especificaciones": "Cancelación activa de ruido, Bluetooth 5.3",
+      "fecha_ingreso": "2024-01-08"
+    },
+    {
+      "id": 6,
+      "nombre": "Sony WH-1000XM5",
+      "marca": "Sony",
+      "categoria": "Accesorios",
+      "precio": 399.99,
+      "stock": 18,
+      "especificaciones": "Over-ear, cancelación de ruido, 30 horas batería",
+      "fecha_ingreso": "2024-01-12"
+    },
+    {
+      "id": 7,
+      "nombre": "iPad Air 11",
+      "marca": "Apple",
+      "categoria": "Tablets",
+      "precio": 799.99,
+      "stock": 10,
+      "especificaciones": "11 pulgadas, 256GB, M2, WiFi + Cellular",
+      "fecha_ingreso": "2024-01-22"
+    },
+    {
+      "id": 8,
+      "nombre": "Samsung Galaxy Tab S9",
+      "marca": "Samsung",
+      "categoria": "Tablets",
+      "precio": 549.99,
+      "stock": 14,
+      "especificaciones": "11 pulgadas AMOLED, 256GB, Snapdragon 8 Gen 2",
+      "fecha_ingreso": "2024-01-19"
+    },
+    {
+      "id": 9,
+      "nombre": "Canon EOS R6",
+      "marca": "Canon",
+      "categoria": "Cámaras",
+      "precio": 2499.99,
+      "stock": 5,
+      "especificaciones": "Full Frame, 20MP, 4K 60fps, estabilizador",
+      "fecha_ingreso": "2024-01-16"
+    },
+    {
+      "id": 10,
+      "nombre": "GoPro Hero 12",
+      "marca": "GoPro",
+      "categoria": "Cámaras",
+      "precio": 499.99,
+      "stock": 25,
+      "especificaciones": "5.3K, estabilización, resistente al agua",
+      "fecha_ingreso": "2024-01-14"
+    },
+    {
+      "id": 11,
+      "nombre": "Samsung 55\" QLED TV",
+      "marca": "Samsung",
+      "categoria": "Televisores",
+      "precio": 1299.99,
+      "stock": 7,
+      "especificaciones": "4K, 120Hz, Quantum Dot, Smart TV",
+      "fecha_ingreso": "2024-01-21"
+    },
+    {
+      "id": 12,
+      "nombre": "LG 65\" OLED TV",
+      "marca": "LG",
+      "categoria": "Televisores",
+      "precio": 1899.99,
+      "stock": 4,
+      "especificaciones": "4K OLED, 120Hz, Dolby Vision, AI ThinQ",
+      "fecha_ingreso": "2024-01-17"
+    },
+    {
+      "id": 13,
+      "nombre": "Nintendo Switch OLED",
+      "marca": "Nintendo",
+      "categoria": "Gaming",
+      "precio": 349.99,
+      "stock": 30,
+      "especificaciones": "OLED 7 pulgadas, 64GB, blanco",
+      "fecha_ingreso": "2024-01-09"
+    },
+    {
+      "id": 14,
+      "nombre": "PlayStation 5",
+      "marca": "Sony",
+      "categoria": "Gaming",
+      "precio": 499.99,
+      "stock": 11,
+      "especificaciones": "Edición estándar, 825GB SSD, 4K",
+      "fecha_ingreso": "2024-01-13"
+    },
+    {
+      "id": 15,
+      "nombre": "Anker PowerBank 26800mAh",
+      "marca": "Anker",
+      "categoria": "Accesorios",
+      "precio": 59.99,
+      "stock": 78,
+      "especificaciones": "Carga rápida USB-C, LED display, 2 salidas",
+      "fecha_ingreso": "2024-01-06"
+    },
+    {
+      "id": 16,
+      "nombre": "iPhone 15",
+      "marca": "Apple",
+      "categoria": "Smartphones",
+      "precio": 799.99,
+      "stock": 28,
+      "especificaciones": "6.1 pulgadas, 128GB, Negro",
+      "fecha_ingreso": "2024-01-23"
+    },
+    {
+      "id": 17,
+      "nombre": "Google Pixel 8 Pro",
+      "marca": "Google",
+      "categoria": "Smartphones",
+      "precio": 999.99,
+      "stock": 19,
+      "especificaciones": "6.7 pulgadas, 256GB, Obsidiana",
+      "fecha_ingreso": "2024-01-24"
+    },
+    {
+      "id": 18,
+      "nombre": "OnePlus 12",
+      "marca": "OnePlus",
+      "categoria": "Smartphones",
+      "precio": 799.99,
+      "stock": 16,
+      "especificaciones": "6.7 pulgadas, 256GB, Gris Silenciado",
+      "fecha_ingreso": "2024-01-25"
+    },
+    {
+      "id": 19,
+      "nombre": "Lenovo ThinkPad X1 Carbon",
+      "marca": "Lenovo",
+      "categoria": "Laptops",
+      "precio": 1599.99,
+      "stock": 9,
+      "especificaciones": "14 pulgadas 2.8K OLED, Intel i7, 512GB SSD",
+      "fecha_ingreso": "2024-01-26"
+    },
+    {
+      "id": 20,
+      "nombre": "ASUS VivoBook 15",
+      "marca": "ASUS",
+      "categoria": "Laptops",
+      "precio": 649.99,
+      "stock": 24,
+      "especificaciones": "15.6 FHD, AMD Ryzen 5, 256GB SSD",
+      "fecha_ingreso": "2024-01-27"
+    },
+    {
+      "id": 21,
+      "nombre": "Samsung Galaxy Buds2 Pro",
+      "marca": "Samsung",
+      "categoria": "Accesorios",
+      "precio": 179.99,
+      "stock": 52,
+      "especificaciones": "Cancelación de ruido, 5 horas batería",
+      "fecha_ingreso": "2024-01-28"
+    },
+    {
+      "id": 22,
+      "nombre": "Beats Studio Pro",
+      "marca": "Beats",
+      "categoria": "Accesorios",
+      "precio": 349.99,
+      "stock": 21,
+      "especificaciones": "Cancelación de ruido, Hi-Fi, 40 horas batería",
+      "fecha_ingreso": "2024-01-29"
+    },
+    {
+      "id": 23,
+      "nombre": "JBL Flip 6",
+      "marca": "JBL",
+      "categoria": "Accesorios",
+      "precio": 129.99,
+      "stock": 67,
+      "especificaciones": "Portátil, resistente al agua, 12 horas",
+      "fecha_ingreso": "2024-01-30"
+    },
+    {
+      "id": 24,
+      "nombre": "iPad Pro 12.9 M2",
+      "marca": "Apple",
+      "categoria": "Tablets",
+      "precio": 1099.99,
+      "stock": 6,
+      "especificaciones": "12.9 pulgadas 120Hz, 256GB, WiFi",
+      "fecha_ingreso": "2024-02-01"
+    },
+    {
+      "id": 25,
+      "nombre": "Microsoft Surface Go 3",
+      "marca": "Microsoft",
+      "categoria": "Tablets",
+      "precio": 449.99,
+      "stock": 13,
+      "especificaciones": "10.5 pulgadas, Intel Pentium, 64GB SSD",
+      "fecha_ingreso": "2024-02-02"
+    },
+    {
+      "id": 26,
+      "nombre": "Sony Alpha 6700",
+      "marca": "Sony",
+      "categoria": "Cámaras",
+      "precio": 1399.99,
+      "stock": 8,
+      "especificaciones": "APS-C, 26MP, 4K 60fps, Hybrid AF",
+      "fecha_ingreso": "2024-02-03"
+    },
+    {
+      "id": 27,
+      "nombre": "Nikon Z6II",
+      "marca": "Nikon",
+      "categoria": "Cámaras",
+      "precio": 1999.99,
+      "stock": 6,
+      "especificaciones": "Full Frame, 24MP, 4K 60fps, estabilizador",
+      "fecha_ingreso": "2024-02-04"
+    },
+    {
+      "id": 28,
+      "nombre": "DJI Mini 3 Pro",
+      "marca": "DJI",
+      "categoria": "Cámaras",
+      "precio": 749.99,
+      "stock": 14,
+      "especificaciones": "Drone 4K, 31 min vuelo, cardán de 3 ejes",
+      "fecha_ingreso": "2024-02-05"
+    },
+    {
+      "id": 29,
+      "nombre": "LG 55\" QNED99 TV",
+      "marca": "LG",
+      "categoria": "Televisores",
+      "precio": 2499.99,
+      "stock": 3,
+      "especificaciones": "Mini LED, 4K 120Hz, Dolby Atmos",
+      "fecha_ingreso": "2024-02-06"
+    },
+    {
+      "id": 30,
+      "nombre": "TCL 55\" 5-Series TV",
+      "marca": "TCL",
+      "categoria": "Televisores",
+      "precio": 599.99,
+      "stock": 11,
+      "especificaciones": "4K, 60Hz, Roku Smart TV",
+      "fecha_ingreso": "2024-02-07"
+    },
+    {
+      "id": 31,
+      "nombre": "Xbox Series X",
+      "marca": "Microsoft",
+      "categoria": "Gaming",
+      "precio": 499.99,
+      "stock": 13,
+      "especificaciones": "12 TFLOPS, 1TB SSD, 4K 120fps",
+      "fecha_ingreso": "2024-02-08"
+    },
+    {
+      "id": 32,
+      "nombre": "Valve Steam Deck OLED",
+      "marca": "Valve",
+      "categoria": "Gaming",
+      "precio": 549.99,
+      "stock": 9,
+      "especificaciones": "7 pulgadas OLED, 512GB, Windows",
+      "fecha_ingreso": "2024-02-09"
+    },
+    {
+      "id": 33,
+      "nombre": "Razer DeathAdder V3",
+      "marca": "Razer",
+      "categoria": "Gaming",
+      "precio": 69.99,
+      "stock": 89,
+      "especificaciones": "30000 DPI, 70M clicks, RGB",
+      "fecha_ingreso": "2024-02-10"
+    },
+    {
+      "id": 34,
+      "nombre": "Corsair K95 Platinum XT",
+      "marca": "Corsair",
+      "categoria": "Gaming",
+      "precio": 229.99,
+      "stock": 34,
+      "especificaciones": "Mecánico, Cherry MX, RGB, aluminio",
+      "fecha_ingreso": "2024-02-11"
+    },
+    {
+      "id": 35,
+      "nombre": "Logitech G Pro X 2",
+      "marca": "Logitech",
+      "categoria": "Gaming",
+      "precio": 299.99,
+      "stock": 27,
+      "especificaciones": "2.4GHz, USB dongle, Lightspeed",
+      "fecha_ingreso": "2024-02-12"
+    },
+    {
+      "id": 36,
+      "nombre": "Samsung 870 QVO 4TB",
+      "marca": "Samsung",
+      "categoria": "Almacenamiento",
+      "precio": 299.99,
+      "stock": 41,
+      "especificaciones": "SSD SATA, lectura 560MB/s, 5 años",
+      "fecha_ingreso": "2024-02-13"
+    },
+    {
+      "id": 37,
+      "nombre": "WD Black SN850X 2TB",
+      "marca": "Western Digital",
+      "categoria": "Almacenamiento",
+      "precio": 199.99,
+      "stock": 38,
+      "especificaciones": "NVMe PCIe 4.0, 7100MB/s",
+      "fecha_ingreso": "2024-02-14"
+    },
+    {
+      "id": 38,
+      "nombre": "Seagate Barracuda 4TB",
+      "marca": "Seagate",
+      "categoria": "Almacenamiento",
+      "precio": 109.99,
+      "stock": 56,
+      "especificaciones": "HDD 3.5\", 5400 RPM, 64MB caché",
+      "fecha_ingreso": "2024-02-15"
+    },
+    {
+      "id": 39,
+      "nombre": "Belkin BoostCharge Pro",
+      "marca": "Belkin",
+      "categoria": "Accesorios",
+      "precio": 129.99,
+      "stock": 43,
+      "especificaciones": "Cargador USB-C 140W, 2 puertos",
+      "fecha_ingreso": "2024-02-16"
+    },
+    {
+      "id": 40,
+      "nombre": "SCUF Controller Pro",
+      "marca": "SCUF",
+      "categoria": "Gaming",
+      "precio": 199.99,
+      "stock": 19,
+      "especificaciones": "Xbox Series X|S, botones intercambiables",
+      "fecha_ingreso": "2024-02-17"
+    },
+    {
+      "id": 41,
+      "nombre": "Meta Quest 3",
+      "marca": "Meta",
+      "categoria": "VR",
+      "precio": 499.99,
+      "stock": 12,
+      "especificaciones": "128GB, 4K LCD, controladores",
+      "fecha_ingreso": "2024-02-18"
+    },
+    {
+      "id": 42,
+      "nombre": "Sony WH-CH720N",
+      "marca": "Sony",
+      "categoria": "Accesorios",
+      "precio": 99.99,
+      "stock": 64,
+      "especificaciones": "Cancelación de ruido, 35 horas batería",
+      "fecha_ingreso": "2024-02-19"
+    },
+    {
+      "id": 43,
+      "nombre": "Bose QuietComfort 45",
+      "marca": "Bose",
+      "categoria": "Accesorios",
+      "precio": 379.99,
+      "stock": 15,
+      "especificaciones": "Cancelación de ruido, confortables",
+      "fecha_ingreso": "2024-02-20"
+    },
+    {
+      "id": 44,
+      "nombre": "Google Nest Hub Max",
+      "marca": "Google",
+      "categoria": "Smart Home",
+      "precio": 229.99,
+      "stock": 20,
+      "especificaciones": "10 pulgadas, cámara, Google Assistant",
+      "fecha_ingreso": "2024-02-21"
+    },
+    {
+      "id": 45,
+      "nombre": "Amazon Echo Show 15",
+      "marca": "Amazon",
+      "categoria": "Smart Home",
+      "precio": 249.99,
+      "stock": 18,
+      "especificaciones": "15 pulgadas, HD, Alexa",
+      "fecha_ingreso": "2024-02-22"
+    },
+    {
+      "id": 46,
+      "nombre": "Philips Hue Starter Kit",
+      "marca": "Philips",
+      "categoria": "Smart Home",
+      "precio": 99.99,
+      "stock": 37,
+      "especificaciones": "16 millones colores, WiFi + Zigbee",
+      "fecha_ingreso": "2024-02-23"
+    },
+    {
+      "id": 47,
+      "nombre": "Samsung SmartThings Hub",
+      "marca": "Samsung",
+      "categoria": "Smart Home",
+      "precio": 69.99,
+      "stock": 29,
+      "especificaciones": "WiFi, Zigbee, Thread, Bluetooth",
+      "fecha_ingreso": "2024-02-24"
+    },
+    {
+      "id": 48,
+      "nombre": "Elgato Stream Deck XL",
+      "marca": "Elgato",
+      "categoria": "Streaming",
+      "precio": 299.99,
+      "stock": 11,
+      "especificaciones": "32 botones LCD, USB-C, personalizable",
+      "fecha_ingreso": "2024-02-25"
+    },
+    {
+      "id": 49,
+      "nombre": "Rode NT1 Signature",
+      "marca": "Rode",
+      "categoria": "Audio",
+      "precio": 449.99,
+      "stock": 14,
+      "especificaciones": "Micrófono cardioide, 1 pulgada, XLR",
+      "fecha_ingreso": "2024-02-26"
+    },
+    {
+      "id": 50,
+      "nombre": "Blue Yeti USB",
+      "marca": "Blue",
+      "categoria": "Audio",
+      "precio": 99.99,
+      "stock": 72,
+      "especificaciones": "Micrófono USB, 4 patrones, silenciador",
+      "fecha_ingreso": "2024-02-27"
+    }
+  ]
+}
