@@ -19,7 +19,12 @@ if os.getcwd() == PROJECT_HOME_FOLDER:
 ### Listado de tablas de la BD
 # Esta función devuelve una lista de las tablas que contiene la BD de la conexión activa.
 
-def list_tables(conn, cursor):
+def list_databases():
+    DB_PATH = "../sqlite_crud/data"
+    databases = [i.stem for i in Path(DB_PATH).iterdir() if i.suffix == ".db"]
+    return databases
+
+def list_tables(cursor):
     tables = (cursor
               .execute("SELECT name FROM sqlite_master WHERE type='table'")
               .fetchall()

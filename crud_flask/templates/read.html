@@ -3,5 +3,26 @@
 {% block title %}List content of database{% endblock %}
 
 {% block content %}
-  <h1>Content of database {{database}}</h1>
+  <h1>Content of table: <em>{{table}}</em></h1>
+  <h2>Selected database: <strong>{{db}}</strong></h2>
+  <table>
+    <thead>
+        <tr>
+            {%for col in columns %}
+                <th>{{col}}</th>
+            {% endfor %}
+        </tr>
+    </thead>
+
+    <tbody>
+        {% for row in rows %}
+            <tr>
+                {% for i in row %}
+                    <td>{{i}}</td>
+                {% endfor %}
+            </tr>
+        {% endfor %}
+    </tbody>
+    
+  </table>
 {% endblock %}

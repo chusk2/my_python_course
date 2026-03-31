@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block title %}Select Database{% endblock %}
+
+{% block content %}
+<div class="selector-wrap">
+
+  <!-- Step 1: select database -->
+  <form method="get" action="/select_db">
+    <div class="field">
+      <label for="db-select">Database</label>
+      <select id="db-select" name="database">
+        <option value="">— select a database —</option>
+        {% for db in databases %}
+          <option value="{{ db }}" {% if db == selected_db %}selected{% endif %}>{{ db }}</option>
+        {% endfor %}
+      </select>
+    </div>
+    <button type="submit">Select</button>
+  </form>
+
+  <!-- Step 2: select table (only shown after a db is selected) -->
+  {% if tables %}
+  <form method="get" action="/read/{{ selected_db }}">
+    <div class="field">
+      <label for="table-select">Table</label>
+      <select id="table-select" name="table">
+        <option value="">— select a table —</option>
+        {% for table in tables %}
+          <option value="{{ table }}">{{ table }}</option>
+        {% endfor %}
+      </select>
+    </div>
+    <button type="submit">Load table</button>
+  </form>
+  {% endif %}
+
+</div>
+{% endblock %}
