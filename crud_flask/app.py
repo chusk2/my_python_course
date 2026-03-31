@@ -21,7 +21,7 @@ def home():
     return "Hello, Flask!"
 
 
-@app.route('/select_db')
+@app.route('/select')
 def index():
     # List all .db files in DB_PATH as database names (without extension)
     databases = [p.stem for p in DB_PATH.iterdir() if p.suffix == ".db"]
@@ -32,33 +32,49 @@ def index():
     selected_db = request.args.get("database")
 
     tables = []
+    columns = []
+    selected_table = request.args.get("table")
+
     if selected_db:
         # Open the selected database and retrieve its table names
         db_file = DB_PATH / f"{selected_db}.db"
         conn, cursor = init_connection(str(db_file))
         tables = list_tables(cursor)
+
+        if selected_table:
+            # Fetch column names for the selected table using PRAGMA
+            # PRAGMA table_info returns one row per column; index 1 is the column name
+            rows = conn.execute(f"PRAGMA table_info({selected_table})").fetchall()
+            columns = [row[1] for row in rows]
+
         conn.close()
 
-    # Pass databases, tables, and selected_db to the template.
-    # - databases: populates the first dropdown
-    # - tables: populates the second dropdown (empty on first load)
-    # - selected_db: used to build the action URL of the second form
-    return render_template('select_db.html', databases=databases, tables=tables, selected_db=selected_db)
+    # Pass all values to the template:
+    # - databases: populates the DB dropdown
+    # - tables: populates the table dropdown (empty on first load)
+    # - columns: populates the column checkboxes (empty until a table is selected)
+    # - selected_db / selected_table: used to preserve selections across steps
+    return render_template('select.html', databases=databases, tables=tables,
+                           columns=columns, selected_db=selected_db, selected_table=selected_table)
 
 
 @app.route("/read/<database>")
 def read(database):
-    # The table name comes as a query parameter: /read/inventario?table=productos
+    # Table and selected columns come as query parameters:
+    # /read/inventario?table=productos&columns=id&columns=nombre
     table = request.args.get("table")
+    selected_columns = request.args.getlist("columns")  # returns a list of checked column names
 
     db_file = f"{Path('../sqlite_crud/data/') / database}.db"
     conn, cursor = init_connection(db_file)
 
     # PRAGMA table_info returns one row per column; index 1 is the column name
-    columns = conn.execute(f'PRAGMA table_info({table})')
-    columns = [row[1] for row in columns.fetchall()]
+    all_columns = conn.execute(f'PRAGMA table_info({table})').fetchall()
+    all_columns = [row[1] for row in all_columns]
 
-    rows = read_table(table, cursor)
+    # Use selected columns if provided, otherwise show all
+    columns = selected_columns if selected_columns else all_columns
+    rows = read_table(table, cursor, cols=columns)
 
     return render_template("read.html", db = database, table = table,columns=columns, rows=rows)
 

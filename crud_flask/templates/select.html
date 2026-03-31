@@ -21,15 +21,34 @@
 
   <!-- Step 2: select table (only shown after a db is selected) -->
   {% if tables %}
-  <form method="get" action="/read/{{ selected_db }}">
+  <form method="get" action="/select_db">
+    <input type="hidden" name="database" value="{{ selected_db }}">
     <div class="field">
       <label for="table-select">Table</label>
       <select id="table-select" name="table">
         <option value="">— select a table —</option>
         {% for table in tables %}
-          <option value="{{ table }}">{{ table }}</option>
+          <option value="{{ table }}" {% if table == selected_table %}selected{% endif %}>{{ table }}</option>
         {% endfor %}
       </select>
+    </div>
+    <button type="submit">Select</button>
+  </form>
+  {% endif %}
+
+  <!-- Step 3: select columns (only shown after a table is selected) -->
+  {% if columns %}
+  <form method="get" action="/read/{{ selected_db }}">
+    <input type="hidden" name="table" value="{{ selected_table }}">
+    <div class="field">
+      <label>Columns</label>
+      <div class="checkboxes">
+        {% for col in columns %}
+        <label class="checkbox-label">
+          <input type="checkbox" name="columns" value="{{ col }}" checked> {{ col }}
+        </label>
+        {% endfor %}
+      </div>
     </div>
     <button type="submit">Load table</button>
   </form>
