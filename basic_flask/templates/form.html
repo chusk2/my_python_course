@@ -1,0 +1,59 @@
+{% extends "basic_template.html" %}
+
+{% block title %}
+<h2>Formulario</h2>
+{% endblock %}
+
+{% block content %}
+
+<!-- El elemento <form> engloba todos los campos.
+     action: URL donde se envían los datos.
+     method: "get" los pone en la URL; "post" los manda en el cuerpo. -->
+
+<form action="/form" method="post">
+
+    <!-- CAMPO 1: texto libre -->
+    <label for="name">Nombre</label>
+    <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Tu nombre"
+        required
+    />
+    
+
+    <!-- CAMPO 2: número -->
+    <label for="age">Edad</label>
+    <input
+        type="number"      
+        id="age"
+        name="age"
+        min="0"            
+        max="120"
+        placeholder="25"
+    />
+
+    <!-- CAMPO 3: lista desplegable -->
+    <label for="city">Ciudad</label>
+    <select id="city" name="city">
+    <!-- value="" vacío desaconseja enviar sin elegir -->
+    <option value="">-- Elige una ciudad --</option>
+    
+    <!-- código de jinja2 que toma las opciones
+     desde lista de ciudades -->
+    
+    {% for city in cities %}
+        <option value="{{city | title}}">{{city | title}}</option>
+    {% endfor %}
+
+    </select>
+
+
+    <!-- CAMPO 4: botón de envío -->
+    <button type="submit">Enviar</button>
+
+</form>
+
+
+{% endblock %}

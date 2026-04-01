@@ -1,0 +1,26 @@
+{% extends "basic_template.html" %}
+
+# title
+{% block title %}
+<h2>Rutas disponibles</h2>
+{% endblock %}
+
+{% block content %}
+
+<p>Lista de rutas disponibles en la app:</p>
+
+<ul>
+    {% for endpoint, route in routes %}
+        <li>
+            <!-- if in jinja2 does not require : like python -->
+            {% if "<" not in route %}  
+                <a href="{{ url_for(endpoint) }}">{{route}}</a>
+            {% else %}
+                <!-- route with an argument does not redirect --> 
+                <a href="#">{{route}}</a>
+            {% endif %}
+        </li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
