@@ -1,0 +1,28 @@
+{% extends "basic_template.html" %}
+
+{% block title %}
+Datos del Formulario
+{% endblock %}
+
+{% block content %}
+
+<h2>Los datos introducidos han sido:</h2>
+
+<table>
+    <!-- <thead>
+        <td>Campo</td>
+        <td>Valor</td>
+    </thead> -->
+
+    {% for k,v in data.items() %}
+        <tr>
+            {% if k == "edad" %}
+                {% set v = v ~ " años" %}
+            {% endif %}
+            <td>{{k | title}}</td>
+            <td>{{v}}</td>
+        </tr>
+    {% endfor %}
+</table>
+
+{% endblock %}

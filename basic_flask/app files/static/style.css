@@ -80,13 +80,29 @@ label {
     margin-bottom: 2px;
 }
 
-input, select {
+input:not([type="radio"]), select {
     padding: 8px 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 1em;
     width: 100%;
     box-sizing: border-box;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.radio-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.radio-group label {
+    font-weight: normal;
 }
 
 input:focus, select:focus {
