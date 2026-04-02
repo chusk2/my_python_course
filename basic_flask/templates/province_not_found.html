@@ -1,0 +1,20 @@
+{% extends "basic_template.html" %}
+
+{% block title %}
+    Error 404 - Página no encontrada
+{% endblock %}
+
+{% block body %}
+    <h2>No existe ningún restaurante en <em>{{province.title()}}</em></h2>
+    
+    <p>Nuestros restaurantes están disponibles en las siguientes provincias:</p>
+        <ul>
+            {% for province_key, name in reservations.items() %}
+                <li>
+                    <a href="{{url_for('show_reservations', province=province_key)}}">{{name["nombre"]}} ({{province_key.title()}})</a>
+                </li>
+            {% endfor %}
+    
+        </ul>
+
+{% endblock %}

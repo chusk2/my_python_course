@@ -1,0 +1,42 @@
+{
+    "granada": {
+        "nombre": "El Patio de Granada",
+        "lunes":    12,
+        "martes":   18,
+        "miercoles": 25,
+        "jueves":   30,
+        "viernes":  45,
+        "sabado":   60,
+        "domingo":  55
+    },
+    "malaga": {
+        "nombre": "La Terraza de Málaga",
+        "lunes":    8,
+        "martes":   14,
+        "miercoles": 20,
+        "jueves":   22,
+        "viernes":  50,
+        "sabado":   70,
+        "domingo":  65
+    },
+    "sevilla": {
+        "nombre": "El Rincón de Sevilla",
+        "lunes":    20,
+        "martes":   25,
+        "miercoles": 30,
+        "jueves":   35,
+        "viernes":  60,
+        "sabado":   80,
+        "domingo":  75
+    },
+    "cordoba": {
+        "nombre": "La Mezquita Gastro",
+        "lunes":    10,
+        "martes":   15,
+        "miercoles": 18,
+        "jueves":   28,
+        "viernes":  40,
+        "sabado":   55,
+        "domingo":  50
+    }
+}

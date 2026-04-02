@@ -1,6 +1,25 @@
 {% extends "basic_template.html" %}
 
 {% block title %}
-    <h1>Homepage</h1>
-    <h2>Welcome to the Flask App</h2>
+    Reservas - Restaurantes Gastro Andalucía
+{% endblock %}
+
+{% block body %}
+    <h1>Restaurantes Gastro Andalucía</h1>
+    <h3>Consulta de reservas</h3>
+    
+    <p>Esta web permite consultar las reservas semanales de los restaurantes
+    de nuestra cadena en Andalucía.</p>
+
+    <h2>Nuestros restaurantes</h2>
+    <ul>
+    
+        {% for province, dic in reservations.items() %}
+          <li>{{dic["nombre"]}} ({{province.title()}})</li>
+        {% endfor %}
+    </ul>
+
+    <p>Para consultar las reservas de un restaurante, accede a la ruta
+    <strong>/reservas/provincia</strong>. Por ejemplo: <em>/reservas/granada</em></p>
+
 {% endblock %}

@@ -1,0 +1,92 @@
+{
+  "python": {
+    "nombre": "Python",
+    "año": 1991,
+    "creador": "Guido van Rossum",
+    "paradigma": ["orientado a objetos", "funcional", "imperativo"],
+    "curiosidad": "El nombre viene de Monty Python, no de la serpiente.",
+    "hola_mundo": "print('Hola mundo')",
+    "peculiaridad": "La indentación es obligatoria y forma parte de la sintaxis.",
+    "dato_random": "Python tiene un easter egg: escribe 'import this' en la consola."
+  },
+  "javascript": {
+    "nombre": "JavaScript",
+    "año": 1995,
+    "creador": "Brendan Eich",
+    "paradigma": ["orientado a objetos", "funcional", "orientado a eventos"],
+    "curiosidad": "Fue diseñado en solo 10 días.",
+    "hola_mundo": "console.log('Hola mundo')",
+    "peculiaridad": "0.1 + 0.2 no es igual a 0.3 por cómo maneja los flotantes.",
+    "dato_random": "typeof null devuelve 'object', un bug que nunca se corrigió por compatibilidad."
+  },
+  "c": {
+    "nombre": "C",
+    "año": 1972,
+    "creador": "Dennis Ritchie",
+    "paradigma": ["imperativo", "estructurado"],
+    "curiosidad": "Unix fue reescrito en C, lo que cambió la historia de los sistemas operativos.",
+    "hola_mundo": "#include <stdio.h>\nint main() { printf('Hola mundo'); return 0; }",
+    "peculiaridad": "Gestión manual de memoria: tú reservas, tú liberas.",
+    "dato_random": "El libro de C (K&R) tiene solo 272 páginas. Python tiene libros de 1000+."
+  },
+  "rust": {
+    "nombre": "Rust",
+    "año": 2010,
+    "creador": "Graydon Hoare (Mozilla)",
+    "paradigma": ["sistemas", "funcional", "concurrente"],
+    "curiosidad": "Ha sido el lenguaje más querido en Stack Overflow 8 años seguidos.",
+    "hola_mundo": "fn main() { println!('Hola mundo'); }",
+    "peculiaridad": "El compilador rechaza código con condiciones de carrera. En tiempo de compilación.",
+    "dato_random": "No tiene garbage collector pero tampoco gestión manual: usa un sistema de 'ownership'."
+  },
+  "sql": {
+    "nombre": "SQL",
+    "año": 1974,
+    "creador": "Donald Chamberlin y Raymond Boyce (IBM)",
+    "paradigma": ["declarativo"],
+    "curiosidad": "Describes QUÉ quieres, no CÓMO obtenerlo. El motor decide el camino.",
+    "hola_mundo": "SELECT 'Hola mundo';",
+    "peculiaridad": "NULL no es igual a NULL. NULL = NULL devuelve NULL, no True.",
+    "dato_random": "Se pronuncia 'sequel' o 'S-Q-L' según a quién le preguntes. Guerra eterna."
+  },
+  "r": {
+    "nombre": "R",
+    "año": 1993,
+    "creador": "Ross Ihaka y Robert Gentleman",
+    "paradigma": ["funcional", "estadístico"],
+    "curiosidad": "Nació como implementación libre del lenguaje S de los Bell Labs.",
+    "hola_mundo": "cat('Hola mundo\\n')",
+    "peculiaridad": "El operador de asignación clásico es <- en lugar de =.",
+    "dato_random": "Los índices empiezan en 1, no en 0. Fuente de confusión eterna para programadores."
+  },
+  "java": {
+    "nombre": "Java",
+    "año": 1995,
+    "creador": "James Gosling (Sun Microsystems)",
+    "paradigma": ["orientado a objetos", "imperativo"],
+    "curiosidad": "El lema original era 'Write once, run anywhere' gracias a la JVM.",
+    "hola_mundo": "public class Main { public static void main(String[] args) { System.out.println('Hola mundo'); } }",
+    "peculiaridad": "Todo vive dentro de una clase. No puedes escribir código fuera de una.",
+    "dato_random": "Android usó Java durante años, lo que generó un juicio épico entre Oracle y Google."
+  },
+  "haskell": {
+    "nombre": "Haskell",
+    "año": 1990,
+    "creador": "Comité académico (Simon Peyton Jones entre otros)",
+    "paradigma": ["funcional puro", "declarativo"],
+    "curiosidad": "Las funciones no tienen efectos secundarios por diseño. Todo es inmutable.",
+    "hola_mundo": "main = putStrLn 'Hola mundo'",
+    "peculiaridad": "La evaluación es perezosa (lazy): solo calcula lo que necesita, cuando lo necesita.",
+    "dato_random": "Aprender Haskell cambia cómo piensas en otros lenguajes, aunque nunca lo uses."
+  },
+  "brainfuck": {
+    "nombre": "Brainfuck",
+    "año": 1993,
+    "creador": "Urban Müller",
+    "paradigma": ["esotérico"],
+    "curiosidad": "Solo tiene 8 instrucciones: + - < > [ ] , .",
+    "hola_mundo": "++++++++[>++++[>++>+++>+++>+<<<<-]>+>+>->>+[<]<-]>>.>---.+++++++..+++.>>.<-.<.+++.------.--------.>>+.>++.",
+    "peculiaridad": "Es Turing completo. Puedes calcular cualquier cosa... si tienes paciencia infinita.",
+    "dato_random": "Existe por el reto de crear el compilador más pequeño posible. El original ocupaba 240 bytes."
+  }
+}

@@ -3,6 +3,14 @@ body {
     max-width: 800px;
     margin: 40px auto;
     padding: 0 20px;
+
+    /*
+    Azul pizarra claro      #e8f0fe Suave, tecnológico
+    Verde menta             #e8f5e9 Fresco, tranquilo
+    Amarillo mantequilla    #fffde7 Cálido, acogedor
+    Lavanda                 #f3e5f5 Suave, creativo
+    Melocotón               #fce8e0 Cálido, amigable
+    */
     background-color: #f5f5f5;
     color: #333;
 }

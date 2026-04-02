@@ -1,0 +1,33 @@
+{% extends "basic_template.html" %}
+
+{%block title %}
+    Reservas - {{reservations["nombre"]}}
+{% endblock %}
+
+{% block body %}
+    {% set restaurant = reservations["nombre"] %}
+
+    <h2>Reservas del restaurante <em>{{restaurant}}</em></h2>
+    
+    <table>
+        <thead>
+                <tr>
+                    <th>Día semana</th>
+                    <th>Reservas</th>
+                </tr>
+        </thead>
+        
+        <tbody>
+
+            {% for weekday, guests_count in reservations.items() %}
+                    {% if weekday != "nombre" %}
+                        <tr>
+                            <td>{{weekday | title }}</td>
+                            <td>{{guests_count}}</td>
+                        </tr>
+                    {% endif %}
+            {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock %}
