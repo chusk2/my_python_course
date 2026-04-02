@@ -5,30 +5,31 @@ app = Flask(__name__)
 
 # cargamos el archivo json son la info de
 # las reservas de los restaurantes
-with open("reservas.json", 'r', encoding='utf-8') as file:
+with open("../data/reservas.json", 'r', encoding='utf-8') as file:
       reservations = json.load(file)
 
 @app.route("/")
+@app.route("/index")
 def index():
     return render_template("index.html", reservations= reservations)
 
 # ruta para página no encontrada
 @app.errorhandler(404)
 def page_not_found(error):
-    return render_template("not_found.html")
+    return render_template("not_found_404.html")
 
-@app.route("/provincia-no-encontrada/<province>")
-def province_not_found(province, reservations):
+@app.route("/provincia-no-valida/<province>")
+def province_not_valid(province, reservations):
       data = [(province, data["nombre"]) for province, data in reservations.items()]
 
-      return render_template('province_not_found.html',
+      return render_template('province_not_valid.html',
                              province = province, data = data)
 
 
 @app.route("/reservas/<province>")
 def show_reservations(province):
       if province not in reservations.keys():
-            return render_template("province_not_found.html",
+            return render_template("province_not_valid.html",
                                            province=province,
                                            reservations = reservations)
             

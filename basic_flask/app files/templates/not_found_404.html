@@ -1,14 +1,15 @@
 {% extends "basic_template.html" %}
 
 {% block title %}
-    <h1>Error 404</h1>
-    <h2>La página que buscas no existe.</h2>
+    Error 404
 {% endblock %}
 
 {% block body %}
+    <h1>Error 404</h1>
+    <h2>La página que buscas no existe.</h2>
 
     <p>Pulsa en este enlace para acceder a la página de inicio: 
-    <a href="{url_for("index")}">Página de inicio</a>
+    <a href="{{url_for('index')}}">Página de inicio</a>
     </p>
 
 {% endblock %}

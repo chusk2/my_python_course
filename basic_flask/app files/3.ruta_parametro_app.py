@@ -32,12 +32,12 @@ html_head = '''
 
 # cargamos el archivo json son la info de
 # los lenguajes de programación
-with open("lenguajes.json", 'r', encoding='utf-8') as file:
+with open("../data/lenguajes.json", 'r', encoding='utf-8') as file:
       languages = json.load(file)
 
 # cargamos el archivo json son la info de
 # las reservas de los restaurantes
-with open("reservas.json", 'r', encoding='utf-8') as file:
+with open("../data/reservas.json", 'r', encoding='utf-8') as file:
       reservations = json.load(file)
 
 

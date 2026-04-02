@@ -63,7 +63,7 @@ html_head = '''
 
 # cargamos el archivo json son la info de
 # las reservas de los restaurantes
-with open("reservas.json", 'r', encoding='utf-8') as file:
+with open("../data/reservas.json", 'r', encoding='utf-8') as file:
       reservations = json.load(file)
 
 @app.route("/")
