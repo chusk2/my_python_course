@@ -1,0 +1,41 @@
+{% extends "basic_template.html" %}
+
+{% block title %}
+<h2>Formulario</h2>
+{% endblock %}
+
+{% block content %}
+
+<form action="/form" method="POST">
+
+    <label for="name">Nombre</label>
+    </br>
+    <input type="text" id="name" name="employee_name" placeholder="Introduce tu nombre aquí..."
+        required>
+
+    {# campo para edad #}
+    <label for="age">Edad</label>
+    </br>
+    <input type="number" id="age" name="age" min="18" max="65" />
+
+    {# radio button para empresa #}
+    <input type="radio" id="radio_company1" name="company" value="google" />
+    <label for="radio_company1">Google</label>
+
+    <input type="radio" id="radio_company2" name="company" value="microsoft" />
+    <label for="radio_company2">Microsoft</label>
+
+    {# departamento #}
+    <label for="position">Departamento</label>
+    <select id="position" name="position">
+        <option value="">-- Selecciona un puesto --</option>
+        <option value="software_eng">Ingeniero de Software</option>
+        <option value="data_eng">Científico de Datos</option>
+        <option value="ML_eng">Ingeniero de Machine Learning</option>
+        <option value="data_eng">Ingeniero de Datos</option>
+        <option value="data_analyst">Analista de Datos</option>
+    </select>
+
+</form>
+
+{% endblock %}
