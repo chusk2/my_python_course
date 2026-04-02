@@ -1,0 +1,65 @@
+{% extends "basic_template.html" %}
+
+{% block title %}
+Elementos Químicos
+{% endblock %}
+
+{% block body %}
+
+<h2>Tabla de elementos químicos</h2>
+
+<table>
+    <!-- generar encabezados de la tabla -->
+    <tr>
+        {% for header in headers %}
+            {% if header == "masa" %}
+                <th>Masa atómica, u</th>
+            {% elif header == "numero" %}
+                <th>Número atómico (Z)</th>
+            {% else %}
+                <th>{{header | title}}</th>
+            {% endif %}
+        {% endfor %}
+    </tr>
+
+    {# 
+    poblar las celdas de cada fila con los valores del diccionario:
+    
+    {"nombre": "Hidrógeno",  "simbolo": "H",  "numero": 1,
+    "categoria": "no_metal",  "masa": 1.008}
+    
+    #}
+
+    {# recorrer la lista elements #}
+    {% for element in elements %}
+        {# --- if/elif para la categoría --- #}
+        {% if element.categoria == "metal" %}
+            {% set color = "goldenrod" %}
+            
+        {% elif element["categoria"] == "no_metal" %}
+            {% set color = "steelblue" %}
+        
+        {% elif element.categoria == "metaloide" %}
+            {% set color = "mediumseagreen" %}
+
+        {% else %}
+            {% set color = "orchid" %}
+        
+        {% endif %}
+
+    {# --- loop.index y loop.last como bonus --- #}
+            <tr>
+                <td>{{ element.nombre }}</td>
+                <td>{{ element.simbolo }}</td>
+                <td style="background-color: {{ color }}">
+                        {{ element.categoria.replace("_", " ") | title }}
+                </td>
+                <td>{{ element.numero }}</td>
+                <td>{{ element.masa }}</td>
+        </tr>
+        </div>
+    {% endfor %}
+
+</table>
+
+{% endblock %}

@@ -11,7 +11,7 @@ body {
     Lavanda                 #f3e5f5 Suave, creativo
     Melocotón               #fce8e0 Cálido, amigable
     */
-    background-color: #f5f5f5;
+    background-color: #e8f0fe;
     color: #333;
 }
 
@@ -114,4 +114,30 @@ footer {
     margin-top: 20px;
     color: #888;
     font-size: 0.9em;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 16px;
+}
+
+th, td {
+    padding: 10px 14px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #4a90d9;
+    color: white;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover td:not([style]) {
+    background-color: #e0ecf8;
 }

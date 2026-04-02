@@ -1,0 +1,16 @@
+{
+  "elementos": [
+    { "nombre": "Hidrógeno",  "simbolo": "H",  "numero": 1,  "categoria": "no_metal",  "masa": 1.008 },
+    { "nombre": "Helio",      "simbolo": "He", "numero": 2,  "categoria": "gas_noble",  "masa": 4.003 },
+    { "nombre": "Litio",      "simbolo": "Li", "numero": 3,  "categoria": "metal",      "masa": 6.941 },
+    { "nombre": "Boro",       "simbolo": "B",  "numero": 5,  "categoria": "metaloide",  "masa": 10.81 },
+    { "nombre": "Carbono",    "simbolo": "C",  "numero": 6,  "categoria": "no_metal",   "masa": 12.011 },
+    { "nombre": "Nitrógeno",  "simbolo": "N",  "numero": 7,  "categoria": "no_metal",   "masa": 14.007 },
+    { "nombre": "Neón",       "simbolo": "Ne", "numero": 10, "categoria": "gas_noble",  "masa": 20.180 },
+    { "nombre": "Sodio",      "simbolo": "Na", "numero": 11, "categoria": "metal",      "masa": 22.990 },
+    { "nombre": "Silicio",    "simbolo": "Si", "numero": 14, "categoria": "metaloide",  "masa": 28.085 },
+    { "nombre": "Cloro",      "simbolo": "Cl", "numero": 17, "categoria": "no_metal",   "masa": 35.450 },
+    { "nombre": "Argón",      "simbolo": "Ar", "numero": 18, "categoria": "gas_noble",  "masa": 39.948 },
+    { "nombre": "Hierro",     "simbolo": "Fe", "numero": 26, "categoria": "metal",      "masa": 55.845 }
+  ]
+}
