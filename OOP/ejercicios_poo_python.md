@@ -87,6 +87,50 @@ del v.temperatura          # Se reinicia a 65°C
 print(v.temperatura)       # 65
 ```
 
+### Nota teórica — "Privado" en Python: un cartel, no un candado
+
+En lenguajes como Java, `private` es una restricción real: el compilador impide el acceso desde fuera de la clase. En Python, la privacidad es una **convención social**, no una imposición técnica. La comunidad lo resume con la frase *"We're all consenting adults here"*.
+
+Existen tres niveles de acceso, pero todos son técnicamente accesibles:
+
+| Sintaxis | Significado | Analogía |
+|---|---|---|
+| `precio` | Público, acceso libre | Puerta abierta |
+| `_precio` | "Privado" por convención | Cartel de "Solo personal autorizado" |
+| `__precio` | Name mangling | Misma puerta, pero le han cambiado el nombre a la sala |
+
+**¿Qué es el name mangling?**
+
+Cuando usas doble guion bajo, Python no oculta el atributo: lo **renombra** internamente a `_NombreClase__atributo`. No puedes acceder con `objeto.__precio`, pero sí con `objeto._Bebida__precio`. Es una protección contra colisiones de nombres en herencia, no un mecanismo de seguridad.
+
+```python
+class Bebida:
+    def __init__(self, precio):
+        self.__precio = precio
+
+cafe = Bebida(2.50)
+# cafe.__precio          → AttributeError (no lo encuentra)
+# cafe._Bebida__precio   → 2.50 (ahí estaba)
+```
+
+**Descubriendo lo "oculto" con `dir()` y `vars()`**
+
+`dir(objeto)` muestra **todo**: métodos, atributos, dunders internos... sin importar el nivel de privacidad. Para filtrar el ruido:
+
+```python
+print([attr for attr in dir(cafe) if not attr.startswith('__')])
+# ['_Bebida__precio']
+```
+
+`vars(objeto)` es aún más directo: muestra solo los atributos de instancia como diccionario.
+
+```python
+print(vars(cafe))
+# {'_Bebida__precio': 2.50}
+```
+
+**Conclusión para el aula:** Haz dos versiones del mismo ejercicio (una con `_` y otra con `__`), y pide a los alumnos que usen `dir()` y `vars()` para inspeccionar los objetos. Verán con sus propios ojos que ambos atributos están ahí, accesibles si sabes dónde mirar. La privacidad en Python es un contrato de confianza entre programadores, no una barrera técnica.
+
 ---
 
 ## 5. Herencia
