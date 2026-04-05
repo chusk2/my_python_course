@@ -1,0 +1,9 @@
+id_transaccion,fecha,mes,categoria,cliente,monto,estado
+TRX017,2024-03-02,03,ropa,Javier Moreno,210.50,completada
+TRX018,2024-03-05,03,electrónica,Enrique Rodríguez,560.00,completada
+TRX019,2024-03-08,03,libros,Silvia Molina,75.50,completada
+TRX020,2024-03-10,03,alimentos,Beatriz Campos,88.75,completada
+TRX021,2024-03-12,03,ropa,Vicente Ortiz,145.00,completada
+TRX022,2024-03-15,03,electrónica,Margarita Pérez,720.25,pendiente
+TRX023,2024-03-18,03,libros,Ramón Salazar,95.00,completada
+TRX024,2024-03-20,03,alimentos,Esther Torre,56.80,cancelada
