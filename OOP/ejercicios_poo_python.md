@@ -137,7 +137,7 @@ print(vars(cafe))
 
 ### Ejercicio 5.1 — Tipos de bebida
 
-Crea una clase base `Bebida` con `nombre` y `precio`. Luego crea dos clases hijas:
+Crea una clase base `Bebida` con `nombre`, `tamaño` (pequeño, mediano, grande) y `precio`. Luego crea dos clases hijas:
 
 - `BebidaCaliente` que añada el atributo `temperatura`.
 - `BebidaFria` que añada el atributo `hielo` (booleano).
@@ -148,8 +148,8 @@ Ambas deben sobrescribir el método `describir()` para incluir su información e
 
 Crea una clase base `Empleado` con `nombre` y `salario_base`. Crea dos subclases:
 
-- `Barista` con un atributo extra `especialidad` y un método `preparar_especial()`.
-- `Encargado` con un atributo extra `turno` y un método `asignar_tarea(barista, tarea)`.
+- `Barista` con un atributo extra `especialidad` y un método `preparar(tipo_cafe)` que imprima qué café está preparando y quién lo hace.
+- `Encargado` con un atributo extra `turno` y un atributo `pedido_actual` (el tipo de café que debe prepararse). Añade un método `pedir_cafe(barista)` que le encargue al barista que prepare el `pedido_actual`.
 
 Usa `super().__init__()` correctamente en ambas subclases.
 
